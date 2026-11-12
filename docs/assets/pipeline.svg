@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="t d">
+  <title id="t">How Mandate turns a policy into a portfolio</title>
+  <desc id="d">The policy is compiled into rules, evidence is gathered by code, three specialist agents assess each company, code verifies every claim and applies the ethics veto, the Chair weighs clean companies, and a code optimiser builds the $100k paper portfolio with a memo and devil's advocate.</desc>
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#123c35" fill-opacity=".07"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#166459"/></marker>
+    <style>
+      .sans{font-family:'Segoe UI',Inter,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+      .serif{font-family:Georgia,'Times New Roman',serif}
+      .card{fill:#fffefa;stroke:#d5dfd3;stroke-width:1.5}
+      .num{fill:#166459;font-size:13px;font-weight:700;letter-spacing:1.8px}
+      .h{fill:#172d29;font-size:21px;font-weight:700}
+      .b{fill:#55695f;font-size:15px}
+      .chip{font-size:11.5px;font-weight:700;letter-spacing:1.2px}
+      .flow{stroke-dasharray:5 7;animation:flow 1.4s linear infinite}
+      @keyframes flow{to{stroke-dashoffset:-24}}
+    </style>
+  </defs>
+
+  <rect width="1200" height="680" rx="18" fill="#f4f6f3"/>
+  <rect width="1200" height="680" rx="18" fill="url(#dots)"/>
+  <rect x=".75" y=".75" width="1198.5" height="678.5" rx="17.5" fill="none" stroke="#cfd8c5" stroke-width="1.5"/>
+
+  <!-- input -->
+  <g class="sans">
+    <rect x="330" y="30" width="540" height="52" rx="26" fill="#123c35"/>
+    <text class="serif" x="364" y="64" font-size="22" fill="#e2eabd">§</text>
+    <text x="386" y="62" font-size="17" fill="#ffffff" font-weight="600">A charity's published investment policy</text>
+  </g>
+  <path d="M600 82V112" stroke="#166459" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ROW 1 -->
+  <g class="sans">
+    <rect class="card" x="36" y="118" width="356" height="184" rx="12"/>
+    <text class="num" x="60" y="150">01 · COMPILE</text>
+    <text class="h" x="60" y="182">Policy → numbered rules</text>
+    <text class="b" x="60" y="212">Each rule quotes its clause; vague</text>
+    <text class="b" x="60" y="234">wording and assumed limits are shown</text>
+    <rect x="60" y="258" width="58" height="24" rx="12" fill="#ece6f7" stroke="#7c5cc4" stroke-opacity=".45"/>
+    <text class="chip" x="89" y="275" fill="#5b3fa6" text-anchor="middle">LLM</text>
+
+    <rect class="card" x="422" y="118" width="356" height="184" rx="12"/>
+    <text class="num" x="446" y="150">02 · GATHER EVIDENCE</text>
+    <text class="h" x="446" y="182">Real sources, stored</text>
+    <text class="b" x="446" y="212">SEC EDGAR · Finnhub · Guardian · GDELT</text>
+    <text class="b" x="446" y="234">EPA ECHO · openFDA · yfinance · FRED</text>
+    <rect x="446" y="258" width="66" height="24" rx="12" fill="#e3f1df" stroke="#1f7a3f" stroke-opacity=".45"/>
+    <text class="chip" x="479" y="275" fill="#1f6b39" text-anchor="middle">CODE</text>
+    <text x="524" y="275" font-size="13" fill="#7b8d84">agents never browse the web</text>
+
+    <rect class="card" x="808" y="118" width="356" height="184" rx="12"/>
+    <text class="num" x="832" y="150">03 · SPECIALISTS</text>
+    <text class="h" x="832" y="182">Three independent views</text>
+    <circle cx="838" cy="207" r="5" fill="#1f7a3f"/><text x="852" y="212" font-size="15" fill="#172d29"><tspan font-weight="700">Melchior</tspan><tspan fill="#55695f"> · ethics, rule by rule</tspan></text>
+    <circle cx="838" cy="231" r="5" fill="#176a9d"/><text x="852" y="236" font-size="15" fill="#172d29"><tspan font-weight="700">Balthasar</tspan><tspan fill="#55695f"> · financial health</tspan></text>
+    <circle cx="838" cy="255" r="5" fill="#b7791f"/><text x="852" y="260" font-size="15" fill="#172d29"><tspan font-weight="700">Casper</tspan><tspan fill="#55695f"> · risk</tspan></text>
+    <rect x="1068" y="268" width="72" height="24" rx="12" fill="#ece6f7" stroke="#7c5cc4" stroke-opacity=".45"/>
+    <text class="chip" x="1104" y="285" fill="#5b3fa6" text-anchor="middle">3 LLMs</text>
+  </g>
+  <path d="M392 210H422" stroke="#166459" stroke-width="2" class="flow"/>
+  <path d="M778 210H808" stroke="#166459" stroke-width="2" class="flow"/>
+  <path d="M986 302V318Q986 330 974 330H180Q168 330 168 342V356" fill="none" stroke="#166459" stroke-width="2" class="flow"/>
+
+  <!-- ROW 2 -->
+  <g class="sans">
+    <rect class="card" x="36" y="358" width="264" height="184" rx="12"/>
+    <text class="num" x="58" y="390">04 · VERIFY</text>
+    <text class="h" x="58" y="422">Check every claim</text>
+    <text class="b" x="58" y="452">Quotes matched verbatim,</text>
+    <text class="b" x="58" y="474">metrics within 2%, IDs resolved</text>
+    <rect x="58" y="498" width="66" height="24" rx="12" fill="#e3f1df" stroke="#1f7a3f" stroke-opacity=".45"/>
+    <text class="chip" x="91" y="515" fill="#1f6b39" text-anchor="middle">CODE</text>
+
+    <rect x="324" y="358" width="264" height="184" rx="12" fill="#fff6f4" stroke="#b42318" stroke-opacity=".55" stroke-width="1.5"/>
+    <text class="num" x="346" y="390" style="fill:#9b1c13">05 · ETHICS VETO</text>
+    <text class="h" x="346" y="422">An if-statement</text>
+    <text class="b" x="346" y="452">Verified FAIL → rejected. FLAG or</text>
+    <text class="b" x="346" y="474">unverified → trustee review</text>
+    <rect x="346" y="498" width="66" height="24" rx="12" fill="#e3f1df" stroke="#1f7a3f" stroke-opacity=".45"/>
+    <text class="chip" x="379" y="515" fill="#1f6b39" text-anchor="middle">CODE</text>
+    <text x="424" y="515" font-size="13" fill="#9b1c13" font-weight="600">no LLM can override</text>
+
+    <rect class="card" x="612" y="358" width="264" height="184" rx="12"/>
+    <text class="num" x="634" y="390">06 · CHAIR</text>
+    <text class="h" x="634" y="422">Full, reduced or reject</text>
+    <text class="b" x="634" y="452">Weighs finance and risk for</text>
+    <text class="b" x="634" y="474">ethics-clean companies only</text>
+    <rect x="634" y="498" width="58" height="24" rx="12" fill="#ece6f7" stroke="#7c5cc4" stroke-opacity=".45"/>
+    <text class="chip" x="663" y="515" fill="#5b3fa6" text-anchor="middle">LLM</text>
+
+    <rect class="card" x="900" y="358" width="264" height="184" rx="12"/>
+    <text class="num" x="922" y="390">07 · OPTIMISE</text>
+    <text class="h" x="922" y="422">$100k, whole shares</text>
+    <text class="b" x="922" y="452">Min-volatility, position caps,</text>
+    <text class="b" x="922" y="474">bond floor, relaxations shown</text>
+    <rect x="922" y="498" width="66" height="24" rx="12" fill="#e3f1df" stroke="#1f7a3f" stroke-opacity=".45"/>
+    <text class="chip" x="955" y="515" fill="#1f6b39" text-anchor="middle">CODE</text>
+  </g>
+  <path d="M300 450H324" stroke="#166459" stroke-width="2" class="flow"/>
+  <path d="M588 450H612" stroke="#166459" stroke-width="2" class="flow"/>
+  <path d="M876 450H900" stroke="#166459" stroke-width="2" class="flow"/>
+  <path d="M1032 542V572" stroke="#166459" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- output -->
+  <g class="sans">
+    <rect x="610" y="578" width="554" height="64" rx="12" fill="#123c35"/>
+    <text x="634" y="606" font-size="16" font-weight="700" fill="#ffffff">Trustee memo · Devil's advocate · Paper portfolio</text>
+    <text x="634" y="628" font-size="13.5" fill="#cfe0c8">Plain English, every figure cited, nothing actually traded</text>
+    <text x="36" y="606" font-size="15" font-weight="700" fill="#172d29">No number shown to a trustee comes from an LLM.</text>
+    <text x="36" y="628" font-size="14" fill="#55695f">Agents supply verified reasons; code supplies every figure.</text>
+  </g>
+</svg>
